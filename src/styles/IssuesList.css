@@ -1,0 +1,7 @@
+.issuesList {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin: 8px 13px 0 15px;
+  padding-right: 13px;
+}
