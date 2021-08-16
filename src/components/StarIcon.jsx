@@ -1,8 +1,21 @@
 import React from "react";
 import "../styles/StarIcon.css";
 
-const StarIcon = ({ star, index, id, setIssuesList, issuesList, group }) => {
-  const issueStar = group.groupIssues[index].star;
+const StarIcon = ({ star, index, id, setIssuesList }) => {
+  const changeStar = (grpId, issueId) => {
+    setIssuesList((list) =>
+      list.map((item) =>
+        item.groupId === grpId
+          ? {
+              ...item,
+              groupIssues: item.groupIssues.map((issue) =>
+                issue.id === issueId ? { ...issue, star: !issue.star } : issue
+              ),
+            }
+          : item
+      )
+    );
+  };
 
   return (
     <svg
@@ -14,7 +27,7 @@ const StarIcon = ({ star, index, id, setIssuesList, issuesList, group }) => {
       viewBox="0 0 17 16"
       className={star ? "staricon filled" : "staricon unfilled"}
       onClick={() => {
-        console.log(issueStar);
+        changeStar(index, id);
       }}
     >
       <path

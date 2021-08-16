@@ -28,6 +28,10 @@
   background-color: #292a48;
 }
 
+.navCategory.active {
+  background-color: #292a48;
+}
+
 .navCategory span {
   font-family: "Proxima Nova Th";
   font-weight: bold;

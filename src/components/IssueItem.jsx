@@ -19,8 +19,6 @@ const IssueItem = ({
         index={index}
         id={id}
         setIssuesList={setIssuesList}
-        issuesList={issuesList}
-        group={group}
       />
     </div>
   );

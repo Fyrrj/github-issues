@@ -22,9 +22,9 @@ const Sidebar = () => {
         <Osxbtn color="#00cd46" />
       </header>
       <nav className="sidebar__nav">
-        <NavCategory category="all" issuesCount={12} />
-        <NavCategory category="open" issuesCount={4} />
-        <NavCategory category="closed" issuesCount={8} />
+        <NavCategory category="all" issuesCount={12} id={0} />
+        <NavCategory category="open" issuesCount={4} id={1} />
+        <NavCategory category="closed" issuesCount={8} id={2} />
       </nav>
     </div>
   );

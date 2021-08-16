@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import gitIcon from "../img/icon-github.svg";
 import openIcon from "../img/icon-open-issue.svg";
 import closedIcon from "../img/icon-closed-issue.svg";
 import "../styles/NavCategory.css";
 
-const NavCategory = ({ category, issuesCount }) => {
+const NavCategory = ({ category, issuesCount, id }) => {
+  const [isActive, setActive] = useState(0);
+
+  const handleActiveCategory = (index) => {
+    // setActive()
+  };
+
   return (
-    <div className="navCategory">
+    <div
+      className={`navCategory ${isActive === id ? "active" : null}`}
+      onClick={() => handleActiveCategory(id)}
+    >
       <div className="navCategory__info">
         {category === "all" && (
           <>
