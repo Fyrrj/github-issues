@@ -10,7 +10,8 @@ const IssuesList = () => {
       groupIssues: [
         {
           id: 0,
-          title: "Page changes",
+          title:
+            "Page changes Page changes Page changes Page changes Page changes",
           star: true,
         },
         {
