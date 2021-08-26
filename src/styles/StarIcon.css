@@ -1,0 +1,8 @@
+.staricon {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.staricon.filled:hover {
+  opacity: 0.15;
+}

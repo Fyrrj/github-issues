@@ -1,0 +1,38 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 150px;
+  height: 500px;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.sidebar:after {
+  position: absolute;
+  content: "";
+  background-color: #101022;
+  opacity: 0.85;
+  width: 150px;
+  height: 500px;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.sidebar__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  padding-left: 15px;
+  z-index: 1410;
+}
+
+.sidebar__nav {
+  z-index: 1410;
+}
